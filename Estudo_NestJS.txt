@@ -27,3 +27,6 @@ OBS Importantes:
     de um provider nas suas dependencias, o provider precisa estar na parte de providers
     e listado lá no contrutor do controller.
 ----------------------------------------------------------------------------------------
+Controller parte 1:
+
+- 
