@@ -1,0 +1,29 @@
+Estudo feito no App.Module:
+- é uma das partes mais importantes do nestjs, praticamente controla as ligações entre os arquivos no programa.
+
+OBS: Nest é feito em Módulos.
+
+Imports: é para importar modulos, sendo assim a aplicação
+pode ser dividida em módulos, sendo cada módulo para um
+papel específico da aplicação. O Appmodule é o modulo principal
+e aqui nesta parte, podemos importar os outros módulos.
+
+controllers: são aqueles que irão cuidar das chamadas em HTTP.
+E utilizam Decorators,por exemplo no Nest, cada método de uma class
+controller é uma rota, por meio de Decorators.
+
+Providers: tudo que não for controllers, são providers.
+
+OBS Importantes:
+
+- 1. Inversão e injeção de dependenciais.
+    Inversão: é o princípio de, quando a gente tem um controller que depende
+    outro arquivo, pro exemplo .AppService, invés de simplismente importar o
+    AppService, ele diz que o AppController deve receber suas dependencias como
+    parâmetros, ou seja, quem estiver chamando o controller é quem envia as depen-
+    decias para ele, não que ele busca.
+
+    Injeção: (Precisa ver melhor), mas para que o Nest detecte um controller que precisa
+    de um provider nas suas dependencias, o provider precisa estar na parte de providers
+    e listado lá no contrutor do controller.
+----------------------------------------------------------------------------------------
