@@ -7,7 +7,7 @@ import { ConfigModule } from '@nestjs/config';
 
 
 @Module({
-  imports: [DatabaseModule, ConfigModule.forRoot()],
+  imports: [DatabaseModule, ConfigModule.forRoot({envFilePath: '.development.env'})],
   controllers: [AppController, CatsController],
   providers: [AppService, AppCatservice,],
 })
